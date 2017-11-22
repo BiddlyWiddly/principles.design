@@ -9,6 +9,7 @@ principles:
  - principle: Monkeys are nice
  - principle: Chickens are good
    summary: I agree
+tag: [github, github-pages, jekyll]
 ---
 
 

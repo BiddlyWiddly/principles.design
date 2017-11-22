@@ -14,5 +14,8 @@ sass:
   style: compressed
 
 collections:
-    examples:
-        output: true
+  examples:
+      output: true
+  tags:
+    output: true
+    permalink: /category/:name/

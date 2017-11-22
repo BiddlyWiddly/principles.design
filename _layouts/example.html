@@ -4,7 +4,18 @@ layout: default
       <header class="example-header">
         <h1>{{page.title}}</h1>
         <p style="max-width: 40em; ">{{page.overview}}</p>
+
+
+
+        {% assign category = site.my_categories | where: "slug", post.category %}
+{% assign category = category[0] %}
+{% if category %}
+    {% capture category_content %}<a class="label" href="{{ category.url }}">{{ category.name }}</a>{% endcapture %}
+{% endif %}
+
+<p id="post-meta">{{ category_content }}</p>
       </header>
+
 
       <aside>
 
